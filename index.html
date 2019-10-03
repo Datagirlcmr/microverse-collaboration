@@ -17,10 +17,19 @@
 </div>
 <div> 
   <form id="survey-form"> 
-    <input type="text" id="name" placeholder="Name" name="Name" required="required"/>
-    <input type="email" id="email" placeholder="Email" name="email" required= "required"/>
-    <input type="number" id="number" placeholder="Number" name="number" />
-    
+
+    <input type="text" id="name" placeholder="Name" name="Name" required="required" id="name-label"/>
+    <input type="email" id="email" placeholder="Email" name="email" required= "required" id="email-label"/>
+    <input type="number" id="number" placeholder="Number" name="number" min="0" max="9" id="number-label"/>
+    <option id="dropdown"></option>
+    <input type="radio" name="name"/>
+    <input type="radio" name="email"/>
+    <input type="radio" name="number"/>
+    <input type="checkbox" value="name"/>
+    <input type="checkbox" value="email"/>
+    <input type="checkbox" value="number"/>
+    <textarea rows="6" cols="60"></textarea>
+    <button id="submit"></button>
   </form>
 </div>
 
