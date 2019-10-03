@@ -15,21 +15,37 @@
   <h1 id = "title"> Survey Form </h1>
   <p id="description"> This survey is out to know the number of women in the Microverse school and their needs</p>
 </div>
-<div> 
-  <form id="survey-form"> 
-
-    <input type="text" id="name" placeholder="Name" name="Name" required="required" id="name-label"/>
-    <input type="email" id="email" placeholder="Email" name="email" required= "required" id="email-label"/>
-    <input type="number" id="number" placeholder="Number" name="number" min="0" max="9" id="number-label"/>
-    <option id="dropdown"></option>
-    <input type="radio" name="name"/>
-    <input type="radio" name="email"/>
-    <input type="radio" name="number"/>
-    <input type="checkbox" value="name"/>
-    <input type="checkbox" value="email"/>
-    <input type="checkbox" value="number"/>
+<div class="jumbotron"> 
+  <form id="survey-form">
+    <div> 
+    <label id="name-label"> Name </label>
+    <input type="text" id="name" placeholder="Name" name="Name" required="required"/>
+    <select id="dropdown">
+        <option value="name">Selma</option>
+        <option value="name">Martin </option>
+      </select>
+    </div>
+    <div>
+    <label id="email-label"> Email </label>
+    <input type="email" id="email" placeholder="Email" name="email" required= "required" />
+    </div>
+    <div>
+    <label id="number-label"> Number </label>
+    <input type="number" id="number" placeholder="Number" name="number" min="0" max="9" />
+    </div>
+    <div>
     <textarea rows="6" cols="60"></textarea>
-    <button id="submit"></button>
+    </div>
+    <div>
+    <input type="radio" name="age" value = "25"/>
+    <input type="radio" name="age" value = "28" />
+    </div>
+    <div>
+    <input type="checkbox" name="age" value = "25"/>
+    <input type="checkbox" name="age" value = "28" />
+    </div>
+    
+    <button id="submit" class="btn-primary"> Submit</button>
   </form>
 </div>
 
